@@ -4,22 +4,52 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>marcelo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/hero.css" />
     </head>
     <body>
         <div class="container">
             <header>
                 <nav>
+                    <a href="#" class="logo">Minha Logo</a>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Meus projetos web</a></li>
-                        <li><a href="#">Meus protótipos</a></li>
-                        <li><a href="#">Sobre mim</a></li>
+                        <li><a class="link" href="#">Início</a></li>
+                        <li><a class="link" href="#">Meus projetos web</a></li>
+                        <li><a class="link" href="#">Meus protótipos</a></li>
+                        <li><a class="link" href="#">Habilidades</a></li>
+                        <li><a class="link" href="#">Sobre mim</a></li>
+                        <li class="li-contato">
+                            <button class="contato botao-link">
+                                <a class="link-contato" href="#">Contato</a>
+                            </button>
+                        </li>
                     </ul>
                 </nav>
             </header>
-           <main class="hero">
-<h3></h3>
-           </main>
+            <main class="hero">
+                <div class="imagem">
+                    <img
+                        src="./images/Design sem nome (14).png"
+                        alt="minha imagem"
+                    />
+                </div>
+                <div class="content-texto">
+                    <h1>Olá, eu sou <span>Marcelo Guimarães</span></h1>
+                    <h2>Desenvolvedor front end</h2>
+                    <button class="btn-baixa-cv botao-link">
+                        <a href="#">Baixar CV</a>
+                    </button>
+                </div>
+            </main>
         </div>
     </body>
 </html>

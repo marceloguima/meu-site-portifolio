@@ -1,0 +1,40 @@
+.hero{
+    display: flex;
+    gap: 80px;
+    height: 100vh;
+}
+
+.imagem{
+    background: var(--quarta-cor);
+    width: 30%;
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+  
+}
+
+.imagem img{
+    position: absolute;
+    left: 80px;
+    filter: drop-shadow(2px 4px 20px var(--terceira-cor) );
+}
+
+
+.content-texto{
+    margin-top: 300px;
+    width: 70%;
+    height: 400px;
+}
+
+.content-texto h1{
+    font-size: 4rem;
+}
+
+.content-texto h1 span{
+    color: var(--quinta-cor);
+}
+
+.content-texto h2{
+    margin-bottom: 50px;
+}
+
