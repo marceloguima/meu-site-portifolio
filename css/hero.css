@@ -1,40 +1,42 @@
-.hero{
+.hero {
     display: flex;
     gap: 80px;
     height: 100vh;
+    background: var(--primeira-cor);
+    padding: 0 20px;
+    margin-bottom: 200px;
 }
 
-.imagem{
+.imagem {
     background: var(--quarta-cor);
+    height: 500px;
+    border-radius: 20px;
     width: 30%;
     display: flex;
-    /* justify-content: center; */
-    position: relative;
-  
+    margin-top: 120px;
+   position: relative;
+   top: 160px;
 }
 
-.imagem img{
+.imagem img {
     position: absolute;
     left: 80px;
-    filter: drop-shadow(2px 4px 20px var(--terceira-cor) );
+    bottom:  0;
+    filter: drop-shadow(2px 4px 20px var(--terceira-cor));
 }
 
-
-.content-texto{
+.content-texto {
     margin-top: 300px;
     width: 70%;
     height: 400px;
 }
 
-.content-texto h1{
+.content-texto h1 {
     font-size: 4rem;
 }
 
-.content-texto h1 span{
-    color: var(--quinta-cor);
-}
 
-.content-texto h2{
+
+.content-texto h2 {
     margin-bottom: 50px;
 }
-

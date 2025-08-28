@@ -13,11 +13,11 @@
     --terceira-cor:#003566;
     --quarta-cor:#ffd60a;
     --quinta-cor:#ffc300;
+    --cor-borda:#bdbaba;
 }
 
 body{
-    background: var(--primeira-cor);
-    padding: 0 20px;
+  background: var(--segunda-cor);
 }
 
 
@@ -29,7 +29,7 @@ body{
     border:  solid 1px ;
     font-size: 1.1rem;
     cursor: pointer;
-    box-shadow: 1px 2px 4px;
+    /* box-shadow: 1px 2px 4px; */
 }
 
 .botao-link:hover{
@@ -39,3 +39,7 @@ body{
 
 
 /* --------------------------------------------------------------- */
+
+span{
+    color: var(--quinta-cor);
+}
