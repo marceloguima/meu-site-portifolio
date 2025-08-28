@@ -11,8 +11,8 @@
     --primeira-cor:#01122c;
     --segunda-cor: #001d3d;
     --terceira-cor:#003566;
-    --quarta-cor:#ffd60a;
-    --quinta-cor:#ffc300;
+    --quarta-cor:#0af7ff;
+    --quinta-cor:#17d1b8;
     --cor-borda:#bdbaba;
 }
 
@@ -23,13 +23,14 @@ body{
 
 /* botoes de lugares diferentes que compartilham estilo */
 .botao-link{
-     background:#e6e6e62d;
+     background:var(--quarta-cor);
+     color: var(--primeira-cor);
     padding: 10px 40px;
     border-radius: 10px;
     border:  solid 1px ;
     font-size: 1.1rem;
     cursor: pointer;
-    /* box-shadow: 1px 2px 4px; */
+  
 }
 
 .botao-link:hover{
