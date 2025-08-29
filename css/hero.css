@@ -1,45 +1,45 @@
 .hero {
     display: flex;
-    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     height: 100vh;
     background: var(--primeira-cor);
-    padding: 0 20px;
+    padding: 0 10px;
     margin-bottom: 200px;
 }
 
-.imagem {
+.div-imagem {
     background: var(--quarta-cor);
-    height: 500px;
+    width: 280px;
+    height: 280px;
     border-radius: 20px;
-    width: 30%;
-   
     display: flex;
     margin-top: 120px;
-   position: relative;
-   top: 160px;
+   border-radius: 500px;
+  
 }
 
-.imagem img {
-    position: absolute;
-    left: 80px;
-    bottom:  0;
-    filter: drop-shadow(2px 4px 20px var(--terceira-cor));
+.div-imagem img {
+   border-radius: 300px;
+   width: 100%;
+   
 }
 
 .content-texto {
-    margin-top: 300px;
-    width: 70%;
+    width: 100%;
     height: 400px;
 }
 
 .content-texto h1 {
-    font-size: 4rem;
-    width: 900px;
+    font-size: 2rem;
+    text-align: center;
+   
 }
 
 .content-texto h2{
-    width: 900px;
-    text-align: end;
+    
+    text-align: center;
 }
 
 .content-texto span{
@@ -50,21 +50,38 @@
 
 
 .content-texto h2 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.btn-baixa-cv{
+width: 300px;
 }
 
 .links-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.caixa-botoes-rede{
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 .botao-redes{
+    width: 10px;
+    height: 40px;
     background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     border: none;
 }
 
-.botao-redes .fa-linkedin, .fa-square-github{
+.fa-linkedin, .fa-square-github{
 border-radius: 10px;
 border: none;
 font-size: 3rem;
