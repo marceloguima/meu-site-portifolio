@@ -15,8 +15,11 @@ nav {
     padding: 20px;
 }
 
-.fa-solid {
+.btn-menu {
+    background: transparent;
+    border: none;
     font-size: 2rem;
+    z-index: 3;
 }
 
 .menu{
@@ -31,12 +34,13 @@ nav {
     align-items: center;
     position: absolute;
     top: 100px;
-    left: 0;
-    display: none;
+    left: -500px;
+  
+    transition: ease-in .5s;
 }
 
 .menu.active{
-    display: flex;
+    left: 0;
 }
 
 li a {
