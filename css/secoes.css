@@ -79,3 +79,23 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+
+.card__tec{
+    width: 200px; 
+    height: 200px;
+    background: var(--primeira-cor);
+    color: var(--quarta-cor);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.card__tec i{
+    font-size: 6rem;
+    color: var(--quarta-cor);
+}

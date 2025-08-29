@@ -34,8 +34,19 @@
 
 .content-texto h1 {
     font-size: 4rem;
+    width: 900px;
 }
 
+.content-texto h2{
+    width: 900px;
+    text-align: end;
+}
+
+.content-texto span{
+    
+    text-shadow: 0px 2px 18px var(--quarta-cor) ;
+
+}
 
 
 .content-texto h2 {
