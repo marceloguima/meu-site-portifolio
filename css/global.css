@@ -21,6 +21,10 @@ body{
   background: var(--segunda-cor);
 }
 
+.container{
+  position: relative;
+}
+
 
 /* botoes de lugares diferentes que compartilham estilo */
 .botao-link{

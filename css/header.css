@@ -22,11 +22,12 @@ nav {
     z-index: 3;
 }
 
-.menu{
-    width: 300px;
-    height: 80vh;
+.menu {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: var(--primeira-cor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,21 +36,47 @@ nav {
     position: absolute;
     top: 100px;
     left: -500px;
-  
-    transition: ease-in .5s;
+    transition: ease-in 0.5s;
 }
 
-.menu.active{
+.menu.active {
     left: 0;
 }
 
+.overlay {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: -600px;
+    right: 0;
+    background: #6a71918e;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in .5s;
+
+   
+}
+
+.overlay.active{
+   visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+
+
 li a {
-    color: var(--primeira-cor);
+    color: var(--branco);
+    width: 100%;
 }
 
 ul li {
+    width: 100%;
     list-style: none;
-    padding: 5px 0;
+text-align: center;
+padding: 10px;
     border: transparent;
 }
 
@@ -74,23 +101,24 @@ a {
 }
 
 @media (min-width: 980px) {
-    .fa-solid {
+    .btn-menu .fa-solid {
         display: none;
     }
 
-    .menu{
-        width:90%;
+    .menu {
+        max-width: none;
+        width: 100%;
         height: 100%;
         background: transparent;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-evenly;
-       position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: static;
     }
 
-    
-li a {
-    color: var(--branco);
-}
+    li a {
+        color: var(--branco);
+    }
 
+  
 }
