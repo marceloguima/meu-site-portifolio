@@ -2,6 +2,8 @@ const menu = document.querySelector(".menu");
 const botaoMenu = document.querySelector(".btn-menu");
 const iconeMenu = document.querySelector(".fa-solid");
 const overlayParaMenu = document.querySelector(".overlay");
+const linksMenuMobile = document.querySelectorAll(".link")
+
 
 botaoMenu.addEventListener("click", () => {
     trocaIcone();
@@ -20,5 +22,14 @@ const trocaIcone = () => {
 
 const showMenu = () => {
     menu.classList.toggle("active");
-    overlayParaMenu.classList.toggle("active")
+    // overlayParaMenu.classList.toggle("active")
 };
+
+
+// tira o menu mobile quando escolher uma opção
+linksMenuMobile.forEach(element => {
+    element.addEventListener("click", ()=>{
+        showMenu()
+        trocaIcone()
+    })
+});
