@@ -12,21 +12,27 @@
     --segunda-cor: #001d3d;
     --terceira-cor:#003566;
     --quarta-cor:#0af7ff;
-    --quinta-cor:#17d1b8;
+    --quinta-cor:#4b727970;
     --cor-borda:#bdbaba;
     --branco:#e2eeee;
     --cor-borda-card:#05dde950;
+    --background-sections:#54565e25;
+    --borda-redonda-card: 10px;
 }
 
 body{
+  width: 100vw;
   background: var(--segunda-cor);
 }
 
 .container{
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 80px;
+  padding-bottom: 80px;
 }
 
 

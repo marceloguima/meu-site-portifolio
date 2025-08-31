@@ -27,23 +27,24 @@
         <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/hero.css" />
         <link rel="stylesheet" href="./css/secoes.css" />
+        <link rel="stylesheet" href="./css/sobre-mim.css" />
     </head>
     <body>
         <div class="container">
             <header>
                 <nav>
-                    <a href="#" class="logo"><img src="./images/logo.png" alt="imagem da logo"></a>
+                    <a href="#" class="logo"
+                        ><img src="./images/logo.png" alt="imagem da logo"
+                    /></a>
                     <ul class="menu">
                         <li><a class="link" href="#inicio">Início</a></li>
                         <li>
                             <a class="link" href="#projetos-web"
-                                >Meus projetos web</a
+                                >Projetos web</a
                             >
                         </li>
                         <li>
-                            <a class="link" href="#prototipos"
-                                >Meus protótipos</a
-                            >
+                            <a class="link" href="#prototipos">Protótipos</a>
                         </li>
                         <li>
                             <a class="link" href="#habilidades">Habilidades</a>
@@ -65,7 +66,10 @@
             <div class="overlay"></div>
             <section class="hero" id="inicio">
                 <div class="div-imagem">
-                    <img src="./images/minha-foto.png" alt="minha imagem" />
+                    <img
+                        src="./images/foto-camisa-verde.png"
+                        alt="minha imagem"
+                    />
                 </div>
 
                 <div class="content-texto">
@@ -321,22 +325,38 @@
 
                 <div class="cards-prototipos">
                     <div class="card_prototipo">
-                        <img src="./images/clima-seguro.png" alt="imagem do protótipo do app clima seguro" />
+                        <img
+                            src="./images/clima-seguro.png"
+                            alt="imagem do protótipo do app clima seguro"
+                        />
 
                         <div class="content">
                             <h3>Clima Seguro</h3>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <a href="#"><button class="btn-prototipo"><i class="fa-brands fa-figma"></i> Ver no figma</button></a>
+                            <a href="#"
+                                ><button class="btn-prototipo">
+                                    <i class="fa-brands fa-figma"></i> Ver no
+                                    figma
+                                </button></a
+                            >
                         </div>
                     </div>
 
                     <div class="card_prototipo">
-                        <img src="./images/agrolink.png" alt="imagem do protótipo do app do agrolink" />
+                        <img
+                            src="./images/agrolink.png"
+                            alt="imagem do protótipo do app do agrolink"
+                        />
 
                         <div class="content">
                             <h3>Agrolink</h3>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <a href="#"><button class="btn-prototipo"><i class="fa-brands fa-figma"></i> Ver no figma</button></a>
+                            <a href="#"
+                                ><button class="btn-prototipo">
+                                    <i class="fa-brands fa-figma"></i> Ver no
+                                    figma
+                                </button></a
+                            >
                         </div>
                     </div>
                 </div>
@@ -404,9 +424,44 @@
                     </div>
                 </div>
             </section>
+
+            <section class="secao-sobre" id="sobre">
+                <!-- <div class="titulo-secao">
+                </div> -->
+                <div class="caixa-imagem-sobre">
+                    <img
+                        src="./images/foto-camisa-azul-sorrindo.png"
+                        alt="minha imagem"
+                    />
+                </div>
+                <div class="texto-sobre">
+                    <h2>Sobre <span>mim</span></h2>
+
+                    <p>
+                        Com uma sólida base em <code>HTML</code>,
+                        <code>CSS</code> e <code>JavaScript</code>, construo
+                        interfaces limpas, responsivas e focadas na experiência
+                        do usuário. Minha jornada profissional anterior como
+                        mecânico de automóveis me proporcionou uma habilidade
+                        aguçada para a resolução de problemas e um olhar atento
+                        aos detalhes, competências que aplico diariamente ao
+                        desenvolver soluções lógicas e eficientes com código.
+                        <span id="texto-oculto">
+                            Atualmente, estou aprofundando meus conhecimentos em
+                            <code>React</code> para criar aplicações ainda mais
+                            dinâmicas e escaláveis. Busco minha primeira
+                            oportunidade para colaborar com uma equipe, aplicar
+                            minha dedicação e continuar crescendo como
+                            desenvolvedor.
+                        </span>
+                        <button class="btn-ler-mais">Ler mais</button>
+                    </p>
+                </div>
+            </section>
         </div>
 
-        <script src="./scripts/main.js"></script>
+        <script src="./scripts/menu.js"></script>
         <script src="./scripts/navegacao.js"></script>
+        <script src="./scripts/controla-texto.js"></script>
     </body>
 </html>

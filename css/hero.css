@@ -8,11 +8,12 @@
     gap: 30px;
     background: var(--primeira-cor);
     padding: 0 10px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
 }
 
 .div-imagem {
-    background: var(--quarta-cor);
+    background-image: url(../images/fundo-imagem.jpg);
+    background-position: center;
     width: 280px;
     height: 280px;
     border-radius: 20px;
