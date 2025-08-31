@@ -24,9 +24,8 @@ nav {
 
 .menu {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: 100vh;
-    border-radius: 10px;
     background-color: var(--primeira-cor);
     display: flex;
     flex-direction: column;
@@ -52,36 +51,27 @@ nav {
     bottom: 0;
     left: -600px;
     right: 0;
-    background: #6a71918e;
+    background: #6a7191b0;
     visibility: hidden;
     opacity: 0;
-    transition: ease-in .5s;
-
-   
+    transition: ease-in 0.5s;
 }
 
-.overlay.active{
-   visibility: visible;
+.overlay.active {
+    visibility: visible;
     opacity: 1;
     left: 0;
 }
 
-
 li a {
     color: var(--branco);
-    width: 100%;
 }
 
 ul li {
     width: 100%;
     list-style: none;
-text-align: center;
-padding: 10px;
+    padding: 10px 100px;
     border: transparent;
-}
-
-ul li:hover {
-    border-bottom: 2px solid;
 }
 
 .li-contato:hover {
@@ -116,9 +106,31 @@ a {
         position: static;
     }
 
-    li a {
+    .link {
         color: var(--branco);
+         padding: 5px;
+         transition: ease-in .3s;
+         border-bottom: solid 2px transparent;
     }
 
-  
+     .link:hover {
+        border-bottom: 2px solid;
+       
+    }
+
+    .link.active {
+        color: var(--quarta-cor);
+        font-weight: 500;
+        font-size: 1.1rem;
+           border-bottom: 2px solid;
+           text-shadow: 1px 3px 10px var(--quarta-cor);
+    }
+
+
+    ul li {
+        padding: 0;
+    }
+
+   
+
 }
