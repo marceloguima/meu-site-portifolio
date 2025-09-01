@@ -1,13 +1,11 @@
 .container-cards {
     width: 95%;
     height: auto;
-    padding: 0 20px 20px;
-    background: var( --background-sections);
+    padding: 40px 10px;
+    background: var(--background-sections);
     border-radius: 10px;
     margin: 0 auto;
-    /* margin-top: 100px; */
 }
-
 
 .titulo-secao {
     width: 100%;
@@ -59,11 +57,11 @@
     transform: scale(1.1);
 }
 
-.card .fa-github  {
+.card .fa-github {
     color: var(--quarta-cor);
 }
 
-.fa-eye{
+.fa-eye {
     color: var(--primeira-cor);
 }
 
@@ -79,12 +77,12 @@
 
 .buttons-card {
     width: 100%;
-    padding:10px  5px;
+    padding: 10px 5px;
     border-radius: 10px;
     font-weight: 500;
 }
 
-.btn-codigo{
+.btn-codigo {
     border: solid 1px var(--quarta-cor);
     color: var(--quarta-cor);
     background: #ffffff3d;
@@ -123,58 +121,63 @@
     color: var(--quarta-cor);
 }
 
-.card__tec .fa-image{
-   color: #4c636444;
+.card__tec .fa-image {
+    color: #4c636444;
 }
 
-
 /* cards que apenas preenche espaço só aparece quando ficar espaço vago */
-.card-preenche{
+.card-preenche {
     display: none;
 }
 
 /* seção de  prototipos */
-.cards-prototipos{
-     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-      justify-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 10%;
+.cards-prototipos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
 }
 
-.card_prototipo{
-    
+.card_prototipo {
+    width: 100%;
+    max-width: 900px;
     background: var(--primeira-cor);
     display: flex;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px 10px;
     gap: 20px;
     border: solid 1px var(--cor-borda-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.card_prototipo img{
-    width: 100px;
+.card_prototipo img {
+    width: 50%;
     object-fit: contain;
 }
 
-.btn-prototipo{
+
+.botoes-prototipo {
     width: 100%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.content {
-display: flex;
-flex-direction: column;
-/* align-items: center; */
-gap: 20px;
+
+
+.botoes-prototipo a{
+
+  
 }
 
-.btn-prototipo{
- width: 100%;
-    max-width: 200px;
-    margin-top: 50px;
+
+.btn-prototipo {
+    width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     border: solid 1px var(--quarta-cor);
     background: #ffffff3d;
@@ -182,14 +185,35 @@ gap: 20px;
     font-size: 1rem;
 }
 
-.btn-prototipo .fa-figma{
- color: var(--quarta-cor);
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content h3 {
+    font-size: 1.3rem;
+}
+
+.content h4 {
+    font-size: 1.1rem;
 }
 
 
+
+.btn-prototipo .fa-figma,
+.fa-youtube {
+    color: var(--quarta-cor);
+}
+
 @media (min-width: 510px) {
-    .card-preenche{
-        display: flex ;
+    .card-preenche {
+        display: flex;
     }
 }
 
@@ -202,9 +226,9 @@ gap: 20px;
     }
 
     .cards-tec {
-grid-template-columns: repeat(4, auto);    }
+        grid-template-columns: repeat(4, auto);
+    }
 }
-
 
 @media (min-width: 720px) {
     .card__tec {
@@ -212,36 +236,28 @@ grid-template-columns: repeat(4, auto);    }
         height: 160px;
     }
 
-
-    
-.card__tec h3 {
-    font-size: 1.4rem;
+    .card__tec h3 {
+        font-size: 1.4rem;
+    }
 }
-} 
-
 
 @media (min-width: 980px) {
-     .cards-tec {
+    .cards-tec {
         grid-template-columns: repeat(6, auto);
     }
 
-    .overlay{
+    .overlay {
         display: none;
     }
-
-
-    .cards-prototipos{
-   
-    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
-    
-    gap: 5%;
 }
-}
-
 
 @media (min-width: 1200px) {
-     .card__tec {
+    .card__tec {
         width: 200px;
         height: 200px;
+    }
+
+    .cards-prototipos {
+        flex-direction: row;
     }
 }
