@@ -23,6 +23,7 @@
 body {
     width: 100vw;
     background: var(--segunda-cor);
+    overflow-x: hidden;
 }
 
 .container {

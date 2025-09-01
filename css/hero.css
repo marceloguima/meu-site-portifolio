@@ -41,6 +41,7 @@
 }
 
 .content-texto-hero h2 {
+    width: 100%;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -106,7 +107,6 @@
     }
 
     .content-texto-hero h2 {
-        width: 445px;
         text-align: end;
     }
 
