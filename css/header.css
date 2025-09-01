@@ -42,27 +42,6 @@ nav {
     left: 0;
 }
 
-.overlay {
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: -600px;
-    right: 0;
-    background: #6a7191b0;
-    visibility: hidden;
-    opacity: 0;
-    transition: ease-in 0.5s;
-}
-
-.overlay.active {
-    visibility: visible;
-    opacity: 1;
-    left: 0;
-}
-
 li a {
     color: var(--branco);
 }
@@ -80,6 +59,10 @@ ul li {
 
 a {
     text-decoration: none;
+}
+
+.link-contato{
+    width: 120px;
 }
 
 .logo {

@@ -12,6 +12,7 @@
     height: 40px;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .titulo-secao h2 {
@@ -22,7 +23,6 @@
 .cards {
     width: 100%;
     height: 100%;
-    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     grid-template-rows: 1fr 1fr;
@@ -37,7 +37,7 @@
     background: var(--primeira-cor);
     border: solid 1px var(--cor-borda-card);
     border-radius: 10px;
-    padding: 10px;
+    padding:5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,8 @@
 }
 
 .buttons {
-    width: 90%;
+    width: 100%;
+    padding: 10px;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -76,7 +77,7 @@
 }
 
 .buttons-card {
-    width: 100%;
+    width: 130px;
     padding: 10px 5px;
     border-radius: 10px;
     font-weight: 500;
@@ -94,7 +95,6 @@
     justify-items: center;
     justify-content: center;
     gap: 15px;
-    margin-top: 40px;
 }
 
 .card__tec {
@@ -155,24 +155,26 @@
 }
 
 .card_prototipo img {
-    width: 50%;
+    width: 30%;
+    height: auto;
     object-fit: contain;
 }
+
+
+.img-titulo{
+display: flex;
+}
+
 
 
 .botoes-prototipo {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
-
-
-.botoes-prototipo a{
-
-  
-}
 
 
 .btn-prototipo {
@@ -183,6 +185,8 @@
     background: #ffffff3d;
     color: var(--quarta-cor);
     font-size: 1rem;
+    justify-content: center;
+
 }
 
 .content {
@@ -192,8 +196,9 @@
     padding: 0 20px;
 }
 
-.content p {
+.card_prototipo p {
     text-align: justify;
+    hyphens: auto;
 }
 
 .content h3 {
@@ -211,7 +216,7 @@
     color: var(--quarta-cor);
 }
 
-@media (min-width: 510px) {
+@media (min-width: 490px) {
     .card-preenche {
         display: flex;
     }
@@ -239,6 +244,36 @@
     .card__tec h3 {
         font-size: 1.4rem;
     }
+
+    .cards-prototipos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+
+.card_prototipo {
+    width: 50%;
+   
+    align-items: center;
+}
+
+
+
+.card_prototipo img {
+    width: 80px;
+    object-fit: contain;
+}
+
+
+.botoes-prototipo {
+    flex-direction: row;
+    justify-content: center;
+}
+
 }
 
 @media (min-width: 980px) {
@@ -249,6 +284,12 @@
     .overlay {
         display: none;
     }
+
+    /* cresce a imagem com hover se atrapalhar a leitura */
+.card_prototipo img:hover {
+transform: scale(1.6) translatex(-20px) translatey(-20px);
+
+}
 }
 
 @media (min-width: 1200px) {
