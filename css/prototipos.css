@@ -1,0 +1,137 @@
+.cards-prototipos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+
+.card_prototipo {
+    width: 100%;
+    max-width: 900px;
+    background: var(--primeira-cor);
+    display: flex;
+    border-radius: 10px;
+    padding: 20px 10px;
+    gap: 20px;
+    border: solid 1px var(--cor-borda-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_prototipo img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.img-titulo {
+    display: flex;
+}
+
+
+
+.botoes-prototipo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.btn-prototipo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: solid 1px var(--quarta-cor);
+    background: #ffffff3d;
+    color: var(--quarta-cor);
+    font-size: 1rem;
+    justify-content: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card_prototipo p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.content h3 {
+    font-size: 1.3rem;
+}
+
+.content h4 {
+    font-size: 1.1rem;
+}
+
+
+
+.btn-prototipo .fa-figma,
+.fa-youtube {
+    color: var(--quarta-cor);
+}
+
+
+@media (min-width: 720px) {
+
+    .cards-prototipos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+
+    .card_prototipo {
+        width: 50%;
+
+        align-items: center;
+    }
+
+
+
+    .card_prototipo img {
+        width: 80px;
+        object-fit: contain;
+    }
+
+
+    .botoes-prototipo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .cards-tec {
+        grid-template-columns: repeat(6, auto);
+    }
+
+
+    /* cresce a imagem com hover se atrapalhar a leitura */
+    .card_prototipo img:hover {
+        transform: scale(1.6) translatex(-8px) translatey(-20px);
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards-prototipos {
+        flex-direction: row;
+    }
+}

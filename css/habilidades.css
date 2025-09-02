@@ -1,0 +1,76 @@
+.cards-tec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    justify-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card__tec {
+    width: 100px;
+    height: 100px;
+    background: var(--primeira-cor);
+    color: var(--quarta-cor);
+    border: solid 1px var(--cor-borda-card);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.card__tec h3 {
+    font-size: 1rem;
+}
+
+.card__tec i {
+    font-size: 3rem;
+    color: var(--quarta-cor);
+}
+
+.card__tec .fa-image {
+    color: #4c636444;
+}
+
+/* cards que apenas preenche espaço só aparece quando ficar espaço vago */
+.card-preenche {
+    display: none;
+}
+
+
+@media (min-width: 490px) {
+    .card-preenche {
+        display: flex;
+    }
+}
+
+@media (min-width: 580px) {
+    .card__tec {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cards-tec {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@media (min-width: 720px) {
+    .card__tec {
+        width: 160px;
+        height: 160px;
+    }
+
+    .card__tec h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card__tec {
+        width: 200px;
+        height: 200px;
+    }
+}

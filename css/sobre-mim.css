@@ -7,6 +7,7 @@
     align-items: center;
     background: var( --background-sections);
     border-radius: var(--borda-redonda-card);
+        border: solid 1px var(--cor-borda-card);
 }
 
 .caixa-imagem-sobre{
@@ -29,6 +30,7 @@
 
 .texto-sobre p{
     text-align: justify;
+    hyphens: auto;
    margin-top: 20px;
 }
 
