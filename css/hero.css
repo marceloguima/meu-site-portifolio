@@ -1,6 +1,6 @@
 .hero {
     width: 95%;
-    height: 80vh;
+    height: auto;
     border-radius: 10px;
     margin-top: 150px;
     display: flex;
@@ -8,7 +8,7 @@
     align-items: center;
     gap: 30px;
     background: var(--primeira-cor);
-    padding: 0 10px;
+    padding: 30px 10px;
     border: solid 1px var(--cor-borda-card);
 }
 
@@ -20,7 +20,6 @@
     height: 280px;
     border-radius: 20px;
     display: flex;
-    margin-top: 120px;
     border-radius: 500px;
     animation: anima-imagem 3s infinite;
     
@@ -52,7 +51,7 @@
 
 .content-texto-hero {
     width: 100%;
-    height: 400px;
+    height: 250px;
 }
 
 .content-texto-hero h1 {
@@ -91,10 +90,11 @@
 
 .links-hero {
     width: 100%;
+    height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -127,6 +127,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 160px 10px;
     }
     .div-imagem {
         margin: 0;
@@ -151,7 +152,8 @@
 
     .links-hero {
         flex-direction: row;
-        width: 445px;
+        /* width: 100%; */
+        justify-content: space-around;
     }
 }
 
