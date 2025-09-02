@@ -12,6 +12,7 @@
 
 .div-imagem {
     background-image: url(../images/fundo-imagem.jpg);
+        border: solid 2px var(--cor-borda-card);
     background-position: center;
     width: 280px;
     height: 280px;
@@ -19,11 +20,32 @@
     display: flex;
     margin-top: 120px;
     border-radius: 500px;
+    animation: anima-imagem 3s infinite;
+    
+}
+
+@keyframes anima-imagem{
+    0% {
+        transform: translateY(0);
+                box-shadow: 2px 2px 18px var(--quarta-cor);
+    }
+    
+    50%{
+        transform: translateY(10px);   
+        box-shadow: 1px 2px 3px var(--quarta-cor);
+     }
+
+    100% {
+        transform: translateY(0);
+                        box-shadow: 2px 2px 18px var(--quarta-cor);
+    }
 }
 
 .div-imagem img {
     border-radius: 300px;
     width: 100%;
+    
+   
 }
 
 .content-texto-hero {
@@ -45,9 +67,24 @@
     margin-bottom: 30px;
     text-align: center;
 }
-
+/*  */
+/* @keyframes anima-botao { */
+    /* 0% { */
+        /* transform: scale(1); */
+    /* } */
+/*  */
+    /* 50% { */
+        /* transform: scale(1.02); */
+    /* } */
+/*  */
+    /* 100% { */
+        /* transform: scale(1); */
+    /* } */
+/* } */
+/*  */
 .btn-baixa-cv {
     width: 300px;
+    /* animation: anima-botao 1.2s infinite; */
 }
 
 .links-hero {
