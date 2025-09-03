@@ -114,8 +114,7 @@
     border: none;
 }
 
-.fa-linkedin,
-.fa-square-github {
+.botao-redes  i {
     border-radius: 10px;
     border: none;
     font-size: 3rem;
