@@ -11,7 +11,7 @@
 
 .card {
     width: 300px;
-    height: 500px;
+    height: 600px;
     background: var(--primeira-cor);
     border: solid 1px var(--cor-borda-card);
     border-radius: 10px;
@@ -20,19 +20,31 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 20px;
     /* position: relative; */
 }
 
 .card img {
     width: 100%;
-    height: 50%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .card img:hover {
     transform: scale(1.1);
+}
+
+.tecs-utilizada{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tecs-utilizada p{
+    border: solid 1px var(--quarta-cor);
+    width: 80px;
+    border-radius: 5px;
+    background: var(--quinta-cor);
 }
 
 .card .fa-github {
@@ -52,7 +64,7 @@
     gap: 20px;
     /* position: absolute; */
     /* bottom: 10px; */
-    margin-top: 20px;
+   
 }
 
 .buttons-card {
@@ -65,5 +77,5 @@
 .btn-codigo {
     border: solid 1px var(--quarta-cor);
     color: var(--quarta-cor);
-    background: #ffffff3d;
+    background: var(--quinta-cor);
 }
