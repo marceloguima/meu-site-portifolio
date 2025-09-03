@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const observerOptions = {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.7,
+        rootMargin: "180px",
+        threshold: 0.8,
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 navLinks.forEach((link) => {
