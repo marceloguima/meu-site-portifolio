@@ -66,6 +66,10 @@ a {
     width: 120px;
 }
 
+.link-contato i{
+    color: var(--primeira-cor);
+}
+
 .logo {
     width: 200px;
     font-size: 2rem;
