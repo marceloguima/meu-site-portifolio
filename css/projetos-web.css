@@ -43,7 +43,7 @@
 .tecs-utilizada p{
     border: solid 1px var(--quarta-cor);
     width: 80px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: var(--quinta-cor);
 }
 
