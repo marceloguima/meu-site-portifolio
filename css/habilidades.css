@@ -7,7 +7,7 @@
 }
 
 .card__tec {
-    min-width: 150px;
+    min-width: 100px;
     color: var(--quarta-cor);
     display: flex;
     flex-direction: column;
@@ -19,11 +19,11 @@
 
 
 .card__tec h3 {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
 }
 
 .card__tec i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--quarta-cor);
 }
 
