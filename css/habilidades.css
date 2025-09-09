@@ -1,8 +1,6 @@
 .cards-tec {
     width: 100%;
     display: flex;
-    justify-items: center;
-    justify-content: center;
     overflow: auto;
     scrollbar-width: none;
 
