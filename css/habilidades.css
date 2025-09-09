@@ -1,11 +1,11 @@
-
-
 .cards-tec {
     width: 100%;
     display: flex;
     justify-items: center;
     justify-content: center;
-overflow: hidden;
+    overflow: auto;
+    scrollbar-width: none;
+
 }
 
 .card__tec {
@@ -31,20 +31,20 @@ overflow: hidden;
 
 
 
-@media(min-width: 580px){
+@media(min-width: 580px) {
 
-.card__tec i{
-    font-size: 3rem;
-}
+    .card__tec i {
+        font-size: 3rem;
+    }
 
 }
 
 @media(min-width: 900px) {
-    .card__tec h3{
+    .card__tec h3 {
         font-size: 1rem !important;
     }
 
-    .card__tec{
+    .card__tec {
         min-width: 10%;
     }
 }
