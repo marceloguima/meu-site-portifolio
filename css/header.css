@@ -28,6 +28,7 @@ nav {
     max-width: 400px;
     height: 100vh;
     background-color: var(--primeira-cor);
+    border-right: solid 3px var(--cor-borda-card);
     display: flex;
     flex-direction: column;
     justify-content: center;

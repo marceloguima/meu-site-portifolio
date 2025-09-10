@@ -90,8 +90,8 @@
 }
 
 .botao-redes {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: transparent;
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@
 .botao-redes  i {
     border-radius: 10px;
     border: none;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--quarta-cor);
 }
 
