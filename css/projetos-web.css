@@ -115,13 +115,13 @@
 }
 
 .div-setas button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background:  var(--primeira-cor);
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: solid 1px var(--quarta-cor);
     border-radius: 50%;
     cursor: pointer;
