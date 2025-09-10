@@ -103,7 +103,7 @@
 .div-setas {
     width: 100%;
     height: 350px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     position: absolute;
@@ -132,7 +132,9 @@
 }
 
 @media(min-width:980px) {
-   
+   .div-setas{
+    display: flex;
+   }
 
         .div-setas:hover {
             opacity: 1;
