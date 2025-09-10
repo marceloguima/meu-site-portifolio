@@ -52,7 +52,7 @@
 
 .caixa-seta i{
     color: var(--quarta-cor);
-    animation: anima-seta 2s infinite;
+    animation: anima-seta  2s infinite;
 }
 
 
@@ -72,6 +72,10 @@
 
     .card__tec {
         min-width: 10%;
+    }
+
+    .caixa-seta{
+        display: none;
     }
 }
 

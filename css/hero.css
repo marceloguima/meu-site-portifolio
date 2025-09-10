@@ -28,7 +28,7 @@
 @keyframes anima-imagem{
     0% {
         transform: translateY(0);
-                box-shadow: 2px 2px 18px var(--quarta-cor);
+                box-shadow: 2px 10px 18px var(--quarta-cor);
     }
     
     50%{
@@ -38,7 +38,7 @@
 
     100% {
         transform: translateY(0);
-                        box-shadow: 2px 2px 18px var(--quarta-cor);
+                        box-shadow: 2px 10px 18px var(--quarta-cor);
     }
 }
 
@@ -68,24 +68,9 @@
     margin-bottom: 30px;
     text-align: center;
 }
-/*  */
-/* @keyframes anima-botao { */
-    /* 0% { */
-        /* transform: scale(1); */
-    /* } */
-/*  */
-    /* 50% { */
-        /* transform: scale(1.02); */
-    /* } */
-/*  */
-    /* 100% { */
-        /* transform: scale(1); */
-    /* } */
-/* } */
-/*  */
+
 .btn-baixa-cv {
     width: 300px;
-    /* animation: anima-botao 1.2s infinite; */
 }
 
 .links-hero {

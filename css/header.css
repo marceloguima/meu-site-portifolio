@@ -43,14 +43,16 @@ nav {
     left: 0;
 }
 
-li a {
+.link{
     color: var(--branco);
 }
 
 ul li {
     width: 100%;
     list-style: none;
-    padding: 10px 100px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
     border: transparent;
 }
 
@@ -58,9 +60,6 @@ ul li {
     border: none;
 }
 
-a {
-    text-decoration: none;
-}
 
 .link-contato{
     width: 120px;
