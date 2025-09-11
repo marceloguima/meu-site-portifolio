@@ -3,9 +3,9 @@ const prevBtn = document.querySelector(".prev")
 const containerCards = document.querySelector(".cards")
 
 nextBtn.addEventListener("click", () => {
-    containerCards.scrollLeft += 350
+    containerCards.scrollLeft += 400
 })
 
 prevBtn.addEventListener("click", () => {
-    containerCards.scrollLeft -= 350
+    containerCards.scrollLeft -= 400
 })

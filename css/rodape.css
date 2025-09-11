@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: auto;
+    height: 150px;
     background: var(--primeira-cor);
     border-top: solid 1px var(--cor-borda-card);
     display: flex;
