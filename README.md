@@ -36,6 +36,6 @@ Para construir este projeto, concentrei-me nos fundamentos do desenvolvimento we
 A maneira mais fácil de navegar pelo meu portfólio é acessando a versão online que eu publiquei. Não precisa instalar nada, é só clicar!
 
 ➡️ **Acesse a Demonstração Online do Portfólio:**
-[portifolio-marcelog.netlify.app]
+portifolio-marcelog.netlify.app
 
 
