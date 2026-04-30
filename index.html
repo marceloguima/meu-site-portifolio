@@ -1,514 +1,711 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Marcelo Guimarães</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcelo Guimarães</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="180x180"
+            href="./images/favicon-avatar.png"
+        />
 
-    <link rel="icon" type="image/png" sizes="180x180" href="./images/favicon-avatar.png">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
 
+        <!-- cdn font awsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+        <!-- meus styles -->
+        <link rel="stylesheet" href="./css/global.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/hero.css" />
+        <link rel="stylesheet" href="./css/secoes.css" />
+        <link rel="stylesheet" href="./css/sobre-mim.css" />
+        <link rel="stylesheet" href="./css/habilidades.css" />
+        <link rel="stylesheet" href="./css/projetos-web.css" />
+        <link rel="stylesheet" href="./css/prototipos.css" />
+        <link rel="stylesheet" href="./css/rodape.css" />
+    </head>
 
-    <!-- cdn font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <a href="#" class="logo">MG </a>
+                    <ul class="menu">
+                        <li><a class="link" href="#inicio">Início</a></li>
+                        <li>
+                            <a class="link" href="#projetos-web"
+                                >Projetos web</a
+                            >
+                        </li>
+                        <li>
+                            <a class="link" href="#prototipos">Protótipos</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li><a class="link" href="#sobre">Sobre mim</a></li>
+                        <li class="li-contato">
+                            <a
+                                class="link-contato botao-link"
+                                href="mailto:marceloguimaraesdev@gmail.com?subject=Contato%20Profissional&body=Olá%2C%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
+                            >
+                                <i class="fa-solid fa-envelope"></i>
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn-menu">
+                        <i class="fa-solid fa-bars" id="icone-menu"></i>
+                    </button>
+                </nav>
+            </header>
 
-    <!-- meus styles -->
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/hero.css" />
-    <link rel="stylesheet" href="./css/secoes.css" />
-    <link rel="stylesheet" href="./css/sobre-mim.css" />
-    <link rel="stylesheet" href="./css/habilidades.css">
-    <link rel="stylesheet" href="./css/projetos-web.css">
-    <link rel="stylesheet" href="./css/prototipos.css">
-    <link rel="stylesheet" href="./css/rodape.css">
-
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <nav>
-                <a href="#" class="logo">MG
-                </a>
-                <ul class="menu">
-                    <li><a class="link" href="#inicio">Início</a></li>
-                    <li>
-                        <a class="link" href="#projetos-web">Projetos web</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#prototipos">Protótipos</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li><a class="link" href="#sobre">Sobre mim</a></li>
-                    <li class="li-contato">
-                        <a class="link-contato botao-link"
-                            href="mailto:marceloguimaraesdev@gmail.com?subject=Contato%20Profissional&body=Olá%2C%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar.">
-                            <i class="fa-solid fa-envelope"></i>
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-                <button class="btn-menu">
-                    <i class="fa-solid fa-bars" id="icone-menu"></i>
-                </button>
-            </nav>
-        </header>
-
-        <section class="hero" id="inicio">
-            <div class="div-imagem">
-                <img src="./images/foto-camisa-verde.png" alt="minha imagem" />
-            </div>
-
-            <div class="content-texto-hero">
-                <h1>Olá, eu sou <span>Marcelo Guimarães</span></h1>
-                <h2>Desenvolvedor front end</h2>
-                <div class="links-hero">
-                    <a class="btn-baixa-cv botao-link" href="./docs/curriculo_marcelo (1).pdf"
-                        download="curriculo-marcelo-guimaraes-dos-santos">
-                        Baixar CV
-                    </a>
-
-                    <div class="caixa-botoes-rede">
-                        <a class="botao-redes" href="https://www.linkedin.com/in/marcelo-guima-dev/
-
-" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a class="botao-redes" href="https://github.com/marceloguima" target="_blank">
-                            <i class="fa-brands fa-square-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="meus-projetos-web container-cards" id="projetos-web">
-            <div class="titulo-secao">
-                <h2>Projetos que <span>Desenvolvi</span></h2>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="./images/tempo.png" alt="Imagem da interface da previsão do tempo" />
-                    <h3>Previsão do tempo</h3>
-                    <div class="paragrafo">
-                        <p>
-                            Consulte o clima de qualquer cidade em tempo real através da API do <b>OpenWeatherMap</b>. A
-                            interface se adapta
-                            visualmente às condições climáticas.
-                        </p>
-                    </div>
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
-                    </div>
-
-
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://prevtempoapp.netlify.app/">
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card botao-link btn-codigo" target="_blank" href="https://github.com/marceloguima/previsao-tempo">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
+            <section class="hero" id="inicio">
+                <div class="div-imagem">
+                    <img
+                        src="./images/foto-camisa-verde.png"
+                        alt="minha imagem"
+                    />
                 </div>
 
-                <div class="card">
-                    <img src="./images/finapp.png" alt="imagem do Finapp" />
-                    <h3>FinApp</h3>
-                    <div class="paragrafo">
-
-                        <p>
-                            Gerencie suas finanças com um painel interativo e <b>alertas visuais</b> de gastos. O
-                            sistema permite <b>filtrar
-                                transações</b> para um controle detalhado.
-                        </p>
-                    </div>
-
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://finaapp1.netlify.app/ ">
-                            <i class="fa-solid fa-eye"></i>Projeto
+                <div class="content-texto-hero">
+                    <h1>Olá, eu sou <span>Marcelo Guimarães</span></h1>
+                    <h2>Desenvolvedor front end</h2>
+                    <div class="links-hero">
+                        <a
+                            class="btn-baixa-cv botao-link"
+                            href="./docs/curriculo_marcelo (1).pdf"
+                            download="curriculo-marcelo-guimaraes-dos-santos"
+                        >
+                            Baixar CV
                         </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/controle-financeiro">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <img src="./images/food.png" alt="Imagem do Food Menu" />
-                    <h3>Food Menu: Cardápio Interativo</h3>
-                    <div class="paragrafo">
-                        <p>
-                            Cardápio digital interativo com um <b>carrinho de compras</b> totalmente funcional. Ajuste
-                            as quantidades e veja o valor
-                            total do pedido ser <b>atualizado em tempo real</b>.
-                        </p>
-                    </div>
+                        <div class="caixa-botoes-rede">
+                            <a
+                                class="botao-redes"
+                                href="https://www.linkedin.com/in/marcelo-guima-dev/
 
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://or-food.netlify.app/" >
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/food">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/meteora.png" alt="Imagem do site Meteora" />
-                    <h3>Projeto Meteora (Curso Alura)</h3>
-                    <div class="paragrafo">
-                        <p>
-                            Interface de e-commerce com layout adaptável para uma <b>navegação intuitiva</b>. O projeto
-                            é otimizado com <b>imagens
-                                responsivas</b> para cada tipo de tela.
-                        </p>
-                    </div>
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://lojmeteora.netlify.app/">
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/projeto-meteora">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/tecpoint.png" alt="Imagem do site tecpoint" />
-                    <h3>TechPoint: Landing Page de E-commerce</h3>
-                    <div class="paragrafo">
-                        <p>
-                            Interface de loja virtual com um <b>carrinho de compras</b> totalmente funcional. Adicione
-                            produtos e veja o total do
-                            pedido ser <b>calculado em tempo real</b>.
-                        </p>
-                    </div>
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://teckpoint.netlify.app/">
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/techpoint">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/styloschic.png" alt="Imagem do site da Styloshic" />
-                    <h3>Stilo Chic: Layout de Loja de Moda</h3>
-                    <div class="paragrafo">
-                        <p>
-                            Vitrine de loja virtual com seções para promoções, categorias e produtos. O foco do projeto
-                            é a criação de um <b>layout
-                                totalmente responsivo</b> e consistente.
-
-                        </p>
-                    </div>
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://stylo-top.netlify.app/">
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/estilo-chic">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/imagem-tecnobooks.png" alt="Imagem do site do Tecnobboks" />
-                    <h3>Tecnolivro(Curso Alura)</h3>
-                    <div class="paragrafo">
-                        <p>
-                            E-commerce de livros utilizando React. Desenvolvido para demonstrar <b>componentização</b> e
-                            gerenciamento de estado em uma
-                            aplicação front-end.
-                        </p>
-                    </div>
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
-                        <p>React</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://stunning-torte-c1bc8b.netlify.app/">
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/alura-books">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./images/calculadora.png" alt="Imagem do app de calculadora" />
-                    <h3>Calculadora com JavaScript</h3>
-                    <div class="paragrafo">
-                        <p>
-                            Calculadora web para operações básicas com uma interface limpa e intuitiva. A lógica foca no
-                            <b>processamento de
-                                cálculos</b> a partir da interação do usuário.
-                        </p>
-                    </div>
-                    <div class="tecs-utilizada">
-                        <p>HTML5</p>
-                        <p>CSS3</p>
-                        <p>JS</p>
-                    </div>
-                    <div class="buttons">
-                        <a class="buttons-card btn-projeto botao-link" target="_blank" href="https://calculandu.netlify.app/">
-                            <i class="fa-solid fa-eye"></i>Projeto
-                        </a>
-                        <a class="buttons-card btn-codigo botao-link" target="_blank" href="https://github.com/marceloguima/calculadora-js">
-                            <i class="fa-brands fa-github"></i>Código
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="div-setas">
-                <button class="prev">
-                    <i class="fa-solid fa-circle-arrow-left"></i>
-                </button>
-                <button class="next">
-                    <i class="fa-solid fa-circle-arrow-right"></i>
-                </button>
-            </div>
-
-        </section>
-
-        <section class="container-cards" id="prototipos">
-            <div class="titulo-secao">
-                <h2>Meus <span>Protótipos</span></h2>
-            </div>
-
-            <div class="cards-prototipos">
-                <div class="card_prototipo">
-                    <div class="img-titulo">
-                        <img src="./images/clima-seguro.png" alt="imagem do protótipo do app clima seguro" />
-
-                        <div class="content">
-                            <h3>Clima <span>Seguro</span></h3>
-                            <h4>
-                                Protótipo <span>Acadêmico</span> para
-                                Resposta a
-                                <span>Ondas de Calor</span>
-                            </h4>
+"
+                                target="_blank"
+                            >
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a
+                                class="botao-redes"
+                                href="https://github.com/marceloguima"
+                                target="_blank"
+                            >
+                                <i class="fa-brands fa-square-github"></i>
+                            </a>
                         </div>
                     </div>
-                    <p>
-                        O Clima Seguro é um protótipo acadêmico de um
-                        aplicativo mobile, concebido para proteger a
-                        população urbana durante eventos de calor extremo. A
-                        solução proposta oferece alertas personalizados
-                        sobre temperatura e umidade, um mapa interativo com
-                        "refúgios climáticos" (locais climatizados, parques
-                        e fontes de água), dicas de saúde e um recurso
-                        inovador focado na proteção de grupos vulneráveis. O
-                        objetivo do projeto foi demonstrar como a tecnologia
-                        pode transformar dados climáticos em ações
-                        preventivas, salvando vidas e fortalecendo a
-                        comunidade.
-                    </p>
-                    <div class="botoes-prototipo">
-                        <a class="btn-prototipo botao-link" href="https://www.figma.com/design/4Srvdb43XqUcvuHu2NQWh9/Untitled?node-id=0-1&t=p2BVoVaEompiUycg-1" target="_blank">
-                            <i class="fa-brands fa-figma"></i> Ver no figma
-                        </a>
-
-                        <a class="btn-prototipo botao-link" href="https://youtu.be/aC66KZnEeaI" target="_blank">
-                            <i class="fa-brands fa-youtube"></i> Ver no
-                            youtube
-                        </a>
-                    </div>
                 </div>
+            </section>
 
-                <div class="card_prototipo">
-                    <div class="img-titulo">
-                        <img src="./images/agrolink.png" alt="imagem do protótipo do app do agrolink" />
+            <section
+                class="meus-projetos-web container-cards"
+                id="projetos-web"
+            >
+                <div class="titulo-secao">
+                    <h2>Projetos que <span>Desenvolvi</span></h2>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img
+                            src="./images/ideia-de-sabor.png"
+                            alt="Imagem da interface do aplicativo IdeiA de Sabor"
+                        />
+                        <h3>IdeiA de Sabor</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Caderno de receitas digital com sistema completo
+                                de autenticação. Destaque para o
+                                <b>Chefinho</b>, um assistente virtual integrado
+                                com Inteligência Artificial para gerar receitas
+                                dinâmicas.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>React</p>
+                            <p>Node.js</p>
+                            <p>MongoDB</p>
+                        </div>
 
-                        <div class="content">
-                            <h3>Agro <span>Link</span></h3>
-                            <h4>
-                                Protótipo <span>Acadêmico</span> de
-                                Marketplace para
-                                <span>Produtores Locais.</span>
-                            </h4>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://ideias-de-sabor.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card botao-link btn-codigo"
+                                target="_blank"
+                                href="https://github.com/marceloguima/front-app-receitas"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
                         </div>
                     </div>
-                    <p>
-                        Este projeto acadêmico explora o conceito da
-                        "AgroLink", uma plataforma mobile de marketplace
-                        projetada para conectar produtores locais de
-                        hortifrúti diretamente aos consumidores. O
-                        aplicativo possui duas interfaces distintas: uma
-                        para clientes, com vitrine de produtos, carrinho de
-                        compras e favoritos; e outra para vendedores, com um
-                        dashboard completo que permite o cadastro de itens,
-                        gestão de pedidos e análise de desempenho de vendas.
-                        O objetivo é fortalecer a economia local e facilitar
-                        o acesso a alimentos frescos e de qualidade.
-                    </p>
 
-                    <div class="botoes-prototipo">
-                        <a class="btn-prototipo botao-link" href="https://www.figma.com/design/BebulJ7GvZnf1zsTWnaQNQ/Untitled?t=p2BVoVaEompiUycg-1" target="_blank">
-                            <i class="fa-brands fa-figma"></i> Ver no figma
-                        </a>
+                    <div class="card">
+                        <img
+                            src="./images/tempo.png"
+                            alt="Imagem da interface da previsão do tempo"
+                        />
+                        <h3>Previsão do tempo</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Consulte o clima de qualquer cidade em tempo
+                                real através da API do <b>OpenWeatherMap</b>. A
+                                interface se adapta visualmente às condições
+                                climáticas.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                        </div>
+
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://prevtempoapp.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card botao-link btn-codigo"
+                                target="_blank"
+                                href="https://github.com/marceloguima/previsao-tempo"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/finapp.png" alt="imagem do Finapp" />
+                        <h3>FinApp</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Gerencie suas finanças com um painel interativo
+                                e <b>alertas visuais</b> de gastos. O sistema
+                                permite <b>filtrar transações</b> para um
+                                controle detalhado.
+                            </p>
+                        </div>
+
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://finaapp1.netlify.app/ "
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/controle-financeiro"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="./images/food.png"
+                            alt="Imagem do Food Menu"
+                        />
+                        <h3>Food Menu: Cardápio Interativo</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Cardápio digital interativo com um
+                                <b>carrinho de compras</b> totalmente funcional.
+                                Ajuste as quantidades e veja o valor total do
+                                pedido ser <b>atualizado em tempo real</b>.
+                            </p>
+                        </div>
+
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://or-food.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/food"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="./images/meteora.png"
+                            alt="Imagem do site Meteora"
+                        />
+                        <h3>Projeto Meteora (Curso Alura)</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Interface de e-commerce com layout adaptável
+                                para uma <b>navegação intuitiva</b>. O projeto é
+                                otimizado com <b>imagens responsivas</b> para
+                                cada tipo de tela.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://lojmeteora.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/projeto-meteora"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="./images/tecpoint.png"
+                            alt="Imagem do site tecpoint"
+                        />
+                        <h3>TechPoint: Landing Page de E-commerce</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Interface de loja virtual com um
+                                <b>carrinho de compras</b> totalmente funcional.
+                                Adicione produtos e veja o total do pedido ser
+                                <b>calculado em tempo real</b>.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://teckpoint.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/techpoint"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="./images/styloschic.png"
+                            alt="Imagem do site da Styloshic"
+                        />
+                        <h3>Stilo Chic: Layout de Loja de Moda</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Vitrine de loja virtual com seções para
+                                promoções, categorias e produtos. O foco do
+                                projeto é a criação de um
+                                <b>layout totalmente responsivo</b> e
+                                consistente.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://stylo-top.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/estilo-chic"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="./images/imagem-tecnobooks.png"
+                            alt="Imagem do site do Tecnobboks"
+                        />
+                        <h3>Tecnolivro(Curso Alura)</h3>
+                        <div class="paragrafo">
+                            <p>
+                                E-commerce de livros utilizando React.
+                                Desenvolvido para demonstrar
+                                <b>componentização</b> e gerenciamento de estado
+                                em uma aplicação front-end.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                            <p>React</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://stunning-torte-c1bc8b.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/alura-books"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img
+                            src="./images/calculadora.png"
+                            alt="Imagem do app de calculadora"
+                        />
+                        <h3>Calculadora com JavaScript</h3>
+                        <div class="paragrafo">
+                            <p>
+                                Calculadora web para operações básicas com uma
+                                interface limpa e intuitiva. A lógica foca no
+                                <b>processamento de cálculos</b> a partir da
+                                interação do usuário.
+                            </p>
+                        </div>
+                        <div class="tecs-utilizada">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="buttons">
+                            <a
+                                class="buttons-card btn-projeto botao-link"
+                                target="_blank"
+                                href="https://calculandu.netlify.app/"
+                            >
+                                <i class="fa-solid fa-eye"></i>Projeto
+                            </a>
+                            <a
+                                class="buttons-card btn-codigo botao-link"
+                                target="_blank"
+                                href="https://github.com/marceloguima/calculadora-js"
+                            >
+                                <i class="fa-brands fa-github"></i>Código
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="div-setas">
+                    <button class="prev">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                    </button>
+                    <button class="next">
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
 
-        <section class="container-cards" id="habilidades">
-            <div class="titulo-secao">
-                <h2>Minhas <span>Habilidades</span></h2>
-            </div>
-
-
-            <div class="cards-tec">
-                <div class="card__tec">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3>HTML 5</h3>
+            <section class="container-cards" id="prototipos">
+                <div class="titulo-secao">
+                    <h2>Meus <span>Protótipos</span></h2>
                 </div>
 
-                <div class="card__tec">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h3>CSS 3</h3>
+                <div class="cards-prototipos">
+                    <div class="card_prototipo">
+                        <div class="img-titulo">
+                            <img
+                                src="./images/clima-seguro.png"
+                                alt="imagem do protótipo do app clima seguro"
+                            />
+
+                            <div class="content">
+                                <h3>Clima <span>Seguro</span></h3>
+                                <h4>
+                                    Protótipo <span>Acadêmico</span> para
+                                    Resposta a
+                                    <span>Ondas de Calor</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <p>
+                            O Clima Seguro é um protótipo acadêmico de um
+                            aplicativo mobile, concebido para proteger a
+                            população urbana durante eventos de calor extremo. A
+                            solução proposta oferece alertas personalizados
+                            sobre temperatura e umidade, um mapa interativo com
+                            "refúgios climáticos" (locais climatizados, parques
+                            e fontes de água), dicas de saúde e um recurso
+                            inovador focado na proteção de grupos vulneráveis. O
+                            objetivo do projeto foi demonstrar como a tecnologia
+                            pode transformar dados climáticos em ações
+                            preventivas, salvando vidas e fortalecendo a
+                            comunidade.
+                        </p>
+                        <div class="botoes-prototipo">
+                            <a
+                                class="btn-prototipo botao-link"
+                                href="https://www.figma.com/design/4Srvdb43XqUcvuHu2NQWh9/Untitled?node-id=0-1&t=p2BVoVaEompiUycg-1"
+                                target="_blank"
+                            >
+                                <i class="fa-brands fa-figma"></i> Ver no figma
+                            </a>
+
+                            <a
+                                class="btn-prototipo botao-link"
+                                href="https://youtu.be/aC66KZnEeaI"
+                                target="_blank"
+                            >
+                                <i class="fa-brands fa-youtube"></i> Ver no
+                                youtube
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card_prototipo">
+                        <div class="img-titulo">
+                            <img
+                                src="./images/agrolink.png"
+                                alt="imagem do protótipo do app do agrolink"
+                            />
+
+                            <div class="content">
+                                <h3>Agro <span>Link</span></h3>
+                                <h4>
+                                    Protótipo <span>Acadêmico</span> de
+                                    Marketplace para
+                                    <span>Produtores Locais.</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <p>
+                            Este projeto acadêmico explora o conceito da
+                            "AgroLink", uma plataforma mobile de marketplace
+                            projetada para conectar produtores locais de
+                            hortifrúti diretamente aos consumidores. O
+                            aplicativo possui duas interfaces distintas: uma
+                            para clientes, com vitrine de produtos, carrinho de
+                            compras e favoritos; e outra para vendedores, com um
+                            dashboard completo que permite o cadastro de itens,
+                            gestão de pedidos e análise de desempenho de vendas.
+                            O objetivo é fortalecer a economia local e facilitar
+                            o acesso a alimentos frescos e de qualidade.
+                        </p>
+
+                        <div class="botoes-prototipo">
+                            <a
+                                class="btn-prototipo botao-link"
+                                href="https://www.figma.com/design/BebulJ7GvZnf1zsTWnaQNQ/Untitled?t=p2BVoVaEompiUycg-1"
+                                target="_blank"
+                            >
+                                <i class="fa-brands fa-figma"></i> Ver no figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-cards" id="habilidades">
+                <div class="titulo-secao">
+                    <h2>Minhas <span>Habilidades</span></h2>
                 </div>
 
-                <div class="card__tec">
-                    <i class="fa-brands fa-square-js"></i>
-                    <h3>JavaScript</h3>
+                <div class="cards-tec">
+                    <div class="card__tec">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML 5</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS 3</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-node"></i>
+                        <h3>NodeJS</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-square-github"></i>
+                        <h3>GitHub</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h3>Git</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-square-figma"></i>
+                        <h3>Figma</h3>
+                    </div>
+
+                    <div class="card__tec">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h3>Bootstrap 5</h3>
+                    </div>
                 </div>
 
-                <div class="card__tec">
-                    <i class="fa-brands fa-react"></i>
-                    <h3>React</h3>
+                <div class="caixa-seta">
+                    <i class="fa-solid fa-arrow-left"></i>
                 </div>
+            </section>
 
-                <div class="card__tec">
-                    <i class="fa-brands fa-node"></i>
-                    <h3>NodeJS</h3>
-                </div>
-
-                <div class="card__tec">
-                    <i class="fa-brands fa-square-github"></i>
-                    <h3>GitHub</h3>
-                </div>
-
-                <div class="card__tec">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <h3>Git</h3>
-                </div>
-
-                <div class="card__tec">
-                    <i class="fa-brands fa-square-figma"></i>
-                    <h3>Figma</h3>
-                </div>
-
-                <div class="card__tec">
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <h3>Bootstrap 5</h3>
-                </div>
-            </div>
-
-            <div class="caixa-seta">
-                <i class="fa-solid fa-arrow-left"></i>
-            </div>
-        </section>
-
-        <section class="secao-sobre" id="sobre">
-            <!-- <div class="titulo-secao">
+            <section class="secao-sobre" id="sobre">
+                <!-- <div class="titulo-secao">
                 </div> -->
-            <div class="caixa-imagem-sobre">
-                <img src="./images/foto-camisa-azul.png" alt="minha imagem" />
-            </div>
-            <div class="texto-sobre">
-                <h2>Sobre <span>mim</span></h2>
+                <div class="caixa-imagem-sobre">
+                    <img
+                        src="./images/foto-camisa-azul.png"
+                        alt="minha imagem"
+                    />
+                </div>
+                <div class="texto-sobre">
+                    <h2>Sobre <span>mim</span></h2>
 
-            <p>
-                Atualmente atuo como <strong>mecânico automotivo</strong>, profissão que me ensinou a ter
-                <strong>atenção aos detalhes</strong>, <strong>foco em resultados</strong> e
-                <strong>capacidade de resolver problemas complexos</strong>. Essas competências aplico
-                também no meu processo de transição para a tecnologia.
-                <span id="texto-oculto">
-                    Tenho uma sólida base em <code>HTML</code>, <code>CSS</code> e <code>JavaScript</code>,
-                    criando interfaces limpas, responsivas e voltadas à experiência do usuário.
-                    Atualmente, estou me aprofundando em <code>React</code>, com o objetivo de desenvolver
-                    aplicações ainda mais dinâmicas e escaláveis. Busco minha primeira oportunidade como
-                    <strong>desenvolvedor</strong>, para aplicar meus conhecimentos, colaborar em equipe
-                    e evoluir profissionalmente na área de tecnologia.
-                </span>
-                <button class="btn-ler-mais">Ler mais</button>
-            </p>
+                    <p>
+                        Atualmente atuo como
+                        <strong>mecânico automotivo</strong>, profissão que me
+                        ensinou a ter <strong>atenção aos detalhes</strong>,
+                        <strong>foco em resultados</strong> e
+                        <strong
+                            >capacidade de resolver problemas complexos</strong
+                        >. Essas competências aplico também no meu processo de
+                        transição para a tecnologia.
+                        <span id="texto-oculto">
+                            Tenho uma sólida base em <code>HTML</code>,
+                            <code>CSS</code> e <code>JavaScript</code>, criando
+                            interfaces limpas, responsivas e voltadas à
+                            experiência do usuário. Atualmente, estou me
+                            aprofundando em <code>React</code>, com o objetivo
+                            de desenvolver aplicações ainda mais dinâmicas e
+                            escaláveis. Busco minha primeira oportunidade como
+                            <strong>desenvolvedor</strong>, para aplicar meus
+                            conhecimentos, colaborar em equipe e evoluir
+                            profissionalmente na área de tecnologia.
+                        </span>
+                        <button class="btn-ler-mais">Ler mais</button>
+                    </p>
+                </div>
+            </section>
 
-            </div>
-        </section>
-
-        <footer>
-            <div class="caixa-botoes-rede">
-                <a class="botao-redes " href="
+            <footer>
+                <div class="caixa-botoes-rede">
+                    <a
+                        class="botao-redes"
+                        href="
                 https://www.linkedin.com/in/marcelo-guima-dev/
 
-" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a class="botao-redes" href="https://github.com/marceloguima" target="_blank">
-                    <i class="fa-brands fa-square-github"></i>
-                </a>
-                <a class="botao-redes" href="mailto:marceloguimaraesdev@gmail.com?subject=Contato%20Profissional&
-body=Olá%2C%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank">
-                    <i class="fa-solid fa-square-envelope"></i>
-                </a>
+"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a
+                        class="botao-redes"
+                        href="https://github.com/marceloguima"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a
+                        class="botao-redes"
+                        href="mailto:marceloguimaraesdev@gmail.com?subject=Contato%20Profissional&
+body=Olá%2C%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar."
+                        target="_blank"
+                    >
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </a>
 
-                <p class="email">marcelo-guimaraes-dev@gmail.com</p>
-              
-            </div>
-            <p>&copy; 2025 Marcelo Guimarães. Todos os direitos reservados.</p>
-        </footer>
-    </div>
+                    <p class="email">marcelo-guimaraes-dev@gmail.com</p>
+                </div>
+                <p>
+                    &copy; 2025 Marcelo Guimarães. Todos os direitos reservados.
+                </p>
+            </footer>
+        </div>
 
-    <script src="./scripts/menu.js"></script>
-    <script src="./scripts/navegacao.js"></script>
-    <script src="./scripts/controla-texto.js"></script>
-    <script src="./scripts/slider-cards.js"></script>
-</body>
-
+        <script src="./scripts/menu.js"></script>
+        <script src="./scripts/navegacao.js"></script>
+        <script src="./scripts/controla-texto.js"></script>
+        <script src="./scripts/slider-cards.js"></script>
+    </body>
 </html>
